@@ -211,7 +211,7 @@ class Window(QWidget):
 
 	def connect(self):
 		self.client = mqtt.Client()
-		self.client.connect("iot.eclipse.org")
+		self.client.connect("165.22.79.210", port = 65020)
 		self.client.on_connect = Window.on_connect
 		self.client.on_message = Window.on_message
 
